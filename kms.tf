@@ -3,7 +3,7 @@ resource "aws_kms_key" "rds-key" {
   tags = {
     Name = "My-rds"
   }
-  
+
 }
 
 resource "aws_kms_alias" "rds-kms-alias" {
