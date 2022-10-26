@@ -4,7 +4,7 @@ pipeline {
 stages {
     stage('checkout') {
   steps {
-   git credentialsId: '78514f62-6373-4002-9be9-201750d3ecbd', url: 'https://github.com/saimanohar9966/jenkins_terraaform.git'
+    checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/saimanohar9966/jenkins_terraaform.gi']]])
   }
 }
 
