@@ -1,7 +1,7 @@
 resource "aws_kms_key" "rds-key" {
   description = "key to encrypt rds password"
   tags = {
-    Name = "My-rds"
+    Name = "my-rds222"
   }
 
 }
